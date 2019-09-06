@@ -11,6 +11,12 @@ public abstract class PiggyBank
 		this.quantity = quantity;
 	}
 
+	public PiggyBank()
+	{
+		this.quantity = quantity;
+		this.worth = worth;
+	}
+
 	// methods
 	public int getQuantity()
 	{

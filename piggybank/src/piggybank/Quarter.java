@@ -8,6 +8,12 @@ public class Quarter extends PiggyBank
 		this.worth = 0.25;
 	}
 
+	public Quarter()
+	{
+		this.quantity = 1;
+		this.worth = 0.25;
+	}
+
 	@Override
 	public String toString()
 	{

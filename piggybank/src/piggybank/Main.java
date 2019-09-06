@@ -9,13 +9,12 @@ public class Main
 	{
 		// testing - instantiate
 //		System.out.println("*** Testing ***");
-//
 //		Quarter quarter = new Quarter(1);
 //		Dollar dollar = new Dollar(5);
 //		Nickel nickel = new Nickel(3);
 //		Dime dime = new Dime(7);
-//		Penny penny = new Penny(10);
-//
+//		Penny penny = new Penny();
+//		System.out.println(penny.getQuantity());
 //		System.out.println(quarter.getQuantity() + " Quarter");
 //		System.out.println("$" + dollar.getQuantity());
 //		System.out.println(nickel.getQuantity() + " Nickels");
@@ -26,13 +25,15 @@ public class Main
 		ArrayList<PiggyBank> piggyBank = new ArrayList<PiggyBank>();
 
 		// add all coins to piggy bank
-		piggyBank.add(new Quarter(1));
-		piggyBank.add(new Dime(1));
-		piggyBank.add(new Dollar(5));
-		piggyBank.add(new Nickel(3));
-		piggyBank.add(new Dime(7));
-		piggyBank.add(new Dollar(1));
-		piggyBank.add(new Penny(10));
+//		piggyBank.add(new Quarter(1));
+//		piggyBank.add(new Dime(1));
+//		piggyBank.add(new Dollar(5));
+//		piggyBank.add(new Nickel(3));
+//		piggyBank.add(new Dime(7));
+//		piggyBank.add(new Dollar(1));
+//		piggyBank.add(new Penny(10));
+
+		piggyBank.add(new Penny());
 
 		System.out.println("*** Print the contents of the Piggy Bank ***");
 		piggyBank.forEach((v) -> System.out.println(v));

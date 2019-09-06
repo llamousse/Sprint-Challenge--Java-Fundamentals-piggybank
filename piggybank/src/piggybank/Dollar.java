@@ -8,6 +8,12 @@ public class Dollar extends PiggyBank
 		this.worth = 1;
 	}
 
+	public Dollar()
+	{
+		this.quantity = 1;
+		this.worth = 1.00;
+	}
+
 	@Override
 	public String toString()
 	{

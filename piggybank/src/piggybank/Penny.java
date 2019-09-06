@@ -8,6 +8,12 @@ public class Penny extends PiggyBank
 		this.worth = 0.01;
 	}
 
+	public Penny()
+	{
+		this.quantity = 1;
+		this.worth = 0.01;
+	}
+
 	@Override
 	public String toString()
 	{
