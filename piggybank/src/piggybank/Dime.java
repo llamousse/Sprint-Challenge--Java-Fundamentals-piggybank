@@ -14,9 +14,20 @@ public class Dime extends PiggyBank
 		this.worth = 0.10;
 	}
 
+	public String toStringOne()
+	{
+		return quantity + " Dime";
+	}
+
 	@Override
 	public String toString()
 	{
-		return quantity + " Dimes";
+		if (this.quantity > 1)
+		{
+			return quantity + " Dimes";
+		} else
+		{
+			return toStringOne();
+		}
 	}
 }

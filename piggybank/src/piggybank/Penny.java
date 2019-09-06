@@ -14,9 +14,20 @@ public class Penny extends PiggyBank
 		this.worth = 0.01;
 	}
 
+	public String toStringOne()
+	{
+		return quantity + " Penny";
+	}
+
 	@Override
 	public String toString()
 	{
-		return quantity + " Pennies";
+		if (this.quantity > 1)
+		{
+			return quantity + " Pennies";
+		} else
+		{
+			return toStringOne();
+		}
 	}
 }

@@ -14,9 +14,20 @@ public class Nickel extends PiggyBank
 		this.worth = 0.05;
 	}
 
+	public String toStringOne()
+	{
+		return quantity + " Nickel";
+	}
+
 	@Override
 	public String toString()
 	{
-		return quantity + " Nickels";
+		if (this.quantity > 1)
+		{
+			return quantity + " Nickels";
+		} else
+		{
+			return toStringOne();
+		}
 	}
 }

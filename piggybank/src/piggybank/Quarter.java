@@ -14,9 +14,20 @@ public class Quarter extends PiggyBank
 		this.worth = 0.25;
 	}
 
+	public String toStringOne()
+	{
+		return quantity + " Quarter";
+	}
+
 	@Override
 	public String toString()
 	{
-		return quantity + " Quarter";
+		if (this.quantity > 1)
+		{
+			return quantity + " Quarters";
+		} else
+		{
+			return toStringOne();
+		}
 	}
 }
